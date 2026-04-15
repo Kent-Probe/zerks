@@ -9,9 +9,14 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sync:discord": "node --env-file=.env scripts/sync-discord-members.mjs"
   },
   "dependencies": {
-    "astro": "^6.1.2"
+    "@fontsource/press-start-2p": "^5.2.7",
+    "@tailwindcss/vite": "4.2.2",
+    "astro": "6.1.2",
+    "framer-motion": "^12.38.0",
+    "tailwindcss": "4.2.2"
   }
 }

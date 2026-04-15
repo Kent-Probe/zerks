@@ -1,0 +1,53 @@
+---
+// Floating Join Button Component
+import { clanData } from '../data/clan-data';
+---
+
+<a
+  href={clanData.discordInvite}
+  target="_blank"
+  rel="noopener noreferrer"
+  class="fixed bottom-8 right-8 z-40 group"
+>
+  <div class="relative">
+    {/* Floating button */}
+    <button
+      class="w-16 h-16 bg-gradient-to-br from-red-500 to-orange-500 rounded-full flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-red-500/50 hover:shadow-xl hover:shadow-red-500/70 transition-all duration-300 transform hover:scale-110 active:scale-95"
+    >
+      <span class="text-xl">💬</span>
+    </button>
+
+    {/* Tooltip */}
+    <div
+      class="absolute bottom-full right-0 mb-3 px-4 py-2 bg-gray-900 border border-orange-500/50 rounded-lg text-white text-sm font-semibold whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none shadow-lg"
+    >
+      Unirse al Discord
+      <div class="absolute top-full right-4 w-2 h-2 bg-gray-900 border-r border-b border-orange-500/50 transform rotate-45"></div>
+    </div>
+
+    {/* Pulse animation */}
+    <div
+      class="absolute inset-0 rounded-full bg-red-500 opacity-75 animate-pulse"
+      style="animation-duration: 2s;"
+    ></div>
+  </div>
+</a>
+
+<style>
+  @keyframes bounce-smooth {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-8px);
+    }
+  }
+
+  button {
+    animation: bounce-smooth 3s ease-in-out infinite;
+  }
+
+  button:hover {
+    animation: none;
+  }
+</style>

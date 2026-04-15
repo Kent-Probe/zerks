@@ -1,0 +1,319 @@
+---
+import { clanData } from "../data/clan-data";
+
+const activeMembers = clanData.members.filter((member) => !member.isFormer);
+const byRole = (role: string) => activeMembers.filter((member) => member.role === role);
+
+const lideres = byRole("LIDER");
+const colideres = byRole("COLIDER");
+const capitanes = byRole("CAPITAN");
+const miembros = byRole("MIEMBRO");
+const reclutadores = byRole("RECLUTADOR");
+const admins = byRole("ADMIN");
+
+const visibleMiembros = miembros.slice(0, 12);
+const hiddenMiembrosCount = Math.max(miembros.length - visibleMiembros.length, 0);
+---
+
+<section id="jerarquia" class="relative py-20 px-4 md:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-black mb-4">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-700 via-red-600 to-red-500">
+          Jerarquia del Clan
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-red-800 to-red-600 mx-auto rounded-full mb-4"></div>
+      <p class="text-gray-400 text-lg">Pasa el mouse sobre cada nodo para ver miembros</p>
+    </div>
+
+    <div class="relative tree-stage rounded-2xl border border-red-900/50 p-6 md:p-10 bg-black/50">
+      <div class="absolute right-2 md:right-6 top-3 md:top-6 node-wrap">
+        <div class="node node-admin">ADMIN ({admins.length})</div>
+        <div class="tooltip-card">
+          {admins.length === 0 && <p class="text-gray-400 text-sm">Sin miembros asignados.</p>}
+          {
+            admins.map((member) => (
+              <div class="tooltip-item">
+                <img src={member.avatar} alt={member.username} class="tooltip-avatar" />
+                <span>{member.username}</span>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+
+      <div class="tree-level level-lider">
+        <div class="node-wrap">
+          <div class="node node-lider">LIDER ({lideres.length})</div>
+          <div class="tooltip-card">
+            {lideres.length === 0 && <p class="text-gray-400 text-sm">Sin miembros asignados.</p>}
+            {
+              lideres.map((member) => (
+                <div class="tooltip-item">
+                  <img src={member.avatar} alt={member.username} class="tooltip-avatar" />
+                  <span>{member.username}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="tree-level level-colider">
+        <div class="node-wrap">
+          <div class="node node-colider">COLIDER ({colideres.length})</div>
+          <div class="tooltip-card">
+            {colideres.length === 0 && <p class="text-gray-400 text-sm">Sin miembros asignados.</p>}
+            {
+              colideres.map((member) => (
+                <div class="tooltip-item">
+                  <img src={member.avatar} alt={member.username} class="tooltip-avatar" />
+                  <span>{member.username}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="connector"></div>
+
+      <div class="tree-level level-capitan">
+        <div class="node-wrap">
+          <div class="node node-capitan">CAPITANES ({capitanes.length})</div>
+          <div class="tooltip-card">
+            {capitanes.length === 0 && <p class="text-gray-400 text-sm">Sin miembros asignados.</p>}
+            {
+              capitanes.map((member) => (
+                <div class="tooltip-item">
+                  <img src={member.avatar} alt={member.username} class="tooltip-avatar" />
+                  <span>{member.username}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+
+      <div class="connector two-branch"></div>
+
+      <div class="tree-level level-bottom">
+        <div class="node-wrap">
+          <div class="node node-miembro">MIEMBROS ({miembros.length})</div>
+          <div class="tooltip-card tooltip-large">
+            {visibleMiembros.length === 0 && <p class="text-gray-400 text-sm">Sin miembros asignados.</p>}
+            {
+              visibleMiembros.map((member) => (
+                <div class="tooltip-item">
+                  <img src={member.avatar} alt={member.username} class="tooltip-avatar" />
+                  <span>{member.username}</span>
+                </div>
+              ))
+            }
+            {
+              hiddenMiembrosCount > 0 && (
+                <p class="text-xs text-red-300/80 mt-2">+{hiddenMiembrosCount} miembros mas...</p>
+              )
+            }
+          </div>
+        </div>
+
+        <div class="node-wrap">
+          <div class="node node-reclutador">RECLUTADORES ({reclutadores.length})</div>
+          <div class="tooltip-card">
+            {reclutadores.length === 0 && <p class="text-gray-400 text-sm">Sin miembros asignados.</p>}
+            {
+              reclutadores.map((member) => (
+                <div class="tooltip-item">
+                  <img src={member.avatar} alt={member.username} class="tooltip-avatar" />
+                  <span>{member.username}</span>
+                </div>
+              ))
+            }
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mt-16 bg-black/50 border border-red-900/50 rounded-lg p-8">
+      <h3 class="text-xl font-bold text-white mb-6">Guia de Roles</h3>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div>
+          <h4 class="text-red-300 font-bold mb-2">ADMIN</h4>
+          <p class="text-gray-400 text-sm">
+            Rol de gestion de Discord y soporte de estructura, fuera de la linea de mando principal.
+          </p>
+        </div>
+        <div>
+          <h4 class="text-red-400 font-bold mb-2">LIDER</h4>
+          <p class="text-gray-400 text-sm">Dirige la estrategia global y las decisiones principales del clan.</p>
+        </div>
+        <div>
+          <h4 class="text-red-500 font-bold mb-2">COLIDER</h4>
+          <p class="text-gray-400 text-sm">Coordina operacion diaria y ejecuta la vision del liderazgo.</p>
+        </div>
+        <div>
+          <h4 class="text-red-300 font-bold mb-2">CAPITAN</h4>
+          <p class="text-gray-400 text-sm">Capitanes especializados: Farmers, PvP y Builder (misma capa jerarquica).</p>
+        </div>
+        <div>
+          <h4 class="text-red-200 font-bold mb-2">RECLUTADOR</h4>
+          <p class="text-gray-400 text-sm">Evalua y trae nuevo talento, al mismo nivel jerarquico que miembros.</p>
+        </div>
+        <div>
+          <h4 class="text-gray-200 font-bold mb-2">MIEMBRO</h4>
+          <p class="text-gray-400 text-sm">Base activa del clan: construccion, combate, soporte y progreso continuo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.65) 0%, rgba(24, 5, 5, 0.65) 100%);
+    border-top: 1px solid rgba(120, 10, 10, 0.45);
+  }
+
+  .tree-stage {
+    backdrop-filter: blur(6px);
+  }
+
+  .tree-level {
+    display: flex;
+    justify-content: center;
+  }
+
+  .level-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  .node-wrap {
+    position: relative;
+    width: fit-content;
+  }
+
+  .node {
+    min-width: 190px;
+    text-align: center;
+    padding: 0.9rem 1.1rem;
+    border-radius: 12px;
+    border: 1px solid rgba(130, 20, 20, 0.8);
+    color: #ffe9e9;
+    font-weight: 800;
+    letter-spacing: 0.04em;
+    background: linear-gradient(180deg, rgba(78, 10, 10, 0.85), rgba(27, 4, 4, 0.85));
+    box-shadow: 0 10px 30px rgba(100, 10, 10, 0.35);
+    cursor: default;
+  }
+
+  .node-admin {
+    background: linear-gradient(180deg, rgba(90, 25, 25, 0.85), rgba(30, 8, 8, 0.85));
+  }
+
+  .node-lider {
+    background: linear-gradient(180deg, rgba(110, 11, 11, 0.9), rgba(35, 5, 5, 0.9));
+  }
+
+  .node-colider {
+    background: linear-gradient(180deg, rgba(85, 14, 14, 0.9), rgba(30, 7, 7, 0.9));
+  }
+
+  .node-capitan {
+    background: linear-gradient(180deg, rgba(70, 16, 16, 0.9), rgba(25, 8, 8, 0.9));
+  }
+
+  .node-miembro,
+  .node-reclutador {
+    width: 100%;
+  }
+
+  .connector {
+    width: 2px;
+    height: 26px;
+    margin: 6px auto;
+    background: linear-gradient(180deg, rgba(145, 30, 30, 0.1), rgba(145, 30, 30, 0.8), rgba(145, 30, 30, 0.1));
+  }
+
+  .connector.two-branch {
+    width: 56%;
+    height: 2px;
+    margin: 12px auto 18px;
+    background: linear-gradient(90deg, rgba(145, 30, 30, 0.05), rgba(145, 30, 30, 0.7), rgba(145, 30, 30, 0.05));
+  }
+
+  .tooltip-card {
+    position: absolute;
+    z-index: 25;
+    top: calc(100% + 10px);
+    left: 50%;
+    transform: translateX(-50%) translateY(4px);
+    width: 260px;
+    max-height: 280px;
+    overflow-y: auto;
+    border: 1px solid rgba(150, 30, 30, 0.5);
+    border-radius: 12px;
+    background: rgba(8, 3, 3, 0.95);
+    backdrop-filter: blur(6px);
+    padding: 0.7rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s ease;
+  }
+
+  .tooltip-large {
+    width: 290px;
+  }
+
+  .node-wrap:hover .tooltip-card {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+    pointer-events: auto;
+  }
+
+  .tooltip-item {
+    display: flex;
+    align-items: center;
+    gap: 0.55rem;
+    color: #f1d6d6;
+    font-size: 0.86rem;
+    padding: 0.4rem;
+    border-radius: 8px;
+  }
+
+  .tooltip-item:hover {
+    background: rgba(115, 19, 19, 0.22);
+  }
+
+  .tooltip-avatar {
+    width: 1.45rem;
+    height: 1.45rem;
+    border-radius: 9999px;
+    border: 1px solid rgba(210, 90, 90, 0.45);
+  }
+
+  @media (max-width: 900px) {
+    .level-bottom {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+    }
+
+    .connector.two-branch {
+      width: 2px;
+      height: 26px;
+      background: linear-gradient(180deg, rgba(145, 30, 30, 0.1), rgba(145, 30, 30, 0.8), rgba(145, 30, 30, 0.1));
+      margin: 8px auto;
+    }
+
+    .tooltip-card {
+      width: 240px;
+    }
+  }
+</style>

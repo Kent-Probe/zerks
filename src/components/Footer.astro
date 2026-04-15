@@ -1,0 +1,101 @@
+---
+// Footer Component
+import { clanData } from "../data/clan-data";
+---
+
+<footer class="relative py-12 px-4 md:px-8 border-t border-orange-500/20 overflow-hidden">
+  {/* Background pattern */}
+  <div class="absolute inset-0 opacity-5">
+    <div
+      class="absolute inset-0 bg-repeat"
+      style="background-image: repeating-conic-gradient(from 0deg at 1px 1px, rgba(255,255,255,0.1) 0deg 90deg, rgba(255,255,255,0) 90deg); background-size: 50px 50px;"
+    >
+    </div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto">
+    <div class="grid md:grid-cols-4 gap-8 mb-12">
+      {/* Clan Info */}
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div
+            class="w-10 h-10 bg-gradient-to-br from-red-500 via-orange-500 to-black rounded-lg flex items-center justify-center font-bold text-white"
+          >
+            Z
+          </div>
+          <span
+            class="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400"
+          >
+            ZERKS
+          </span>
+        </div>
+        <p class="text-gray-500 text-sm">{clanData.description}</p>
+      </div>
+
+      {/* Quick Links */}
+      <div>
+        <h3 class="text-white font-bold mb-4">Navegación</h3>
+        <ul class="space-y-2">
+          <li><a href="#inicio" class="text-gray-400 hover:text-orange-400 transition-colors text-sm">Inicio</a></li>
+          <li><a href="#clan" class="text-gray-400 hover:text-orange-400 transition-colors text-sm">Información</a></li>
+          <li>
+            <a href="#jerarquia" class="text-gray-400 hover:text-orange-400 transition-colors text-sm">Jerarquía</a>
+          </li>
+          <li>
+            <a href="#miembros" class="text-gray-400 hover:text-orange-400 transition-colors text-sm">Miembros</a>
+          </li>
+        </ul>
+      </div>
+
+      {/* More Links */}
+      <div>
+        <h3 class="text-white font-bold mb-4">Actividades</h3>
+        <ul class="space-y-2">
+          <li>
+            <a href="#proyectos" class="text-gray-400 hover:text-orange-400 transition-colors text-sm">Proyectos</a>
+          </li>
+          <li>
+            <a
+              href={clanData.discordInvite}
+              target="_blank"
+              class="text-gray-400 hover:text-orange-400 transition-colors text-sm">Discord</a>
+          </li>
+        </ul>
+      </div>
+
+      {/* Contact */}
+      <div>
+        <h3 class="text-white font-bold mb-4">Comunidad</h3>
+        <div class="space-y-3">
+          <div>
+            <p class="text-gray-500 text-xs mb-1">IP del Servidor</p>
+            <p class="text-orange-400 font-mono text-sm font-bold">{clanData.serverIp}</p>
+            <p class="text-orange-400 font-mono text-sm font-bold">{clanData.serverIpBedrockEdition}</p>
+          </div>
+          <a
+            href={clanData.discordInvite}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-block px-4 py-2 bg-gradient-to-r from-red-600 to-orange-500 text-white rounded-lg text-sm font-bold hover:shadow-lg hover:shadow-red-500/50 transition-all duration-300"
+          >
+            Unirse al Discord
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* Divider */}
+    <div class="border-t border-orange-500/20 pt-8 md:flex items-center justify-between">
+      <p class="text-gray-500 text-sm text-center md:text-left">
+        © 2026 {clanData.name} Clan. Todos los derechos reservados.
+      </p>
+      <p class="text-gray-600 text-xs mt-4 md:mt-0 text-center md:text-right">Hecho con ❤️ para la comunidad Zerks</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  footer {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.8) 0%, rgba(20, 0, 0, 0.5) 100%);
+  }
+</style>

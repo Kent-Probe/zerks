@@ -1,0 +1,166 @@
+---
+// Projects Component
+import { projects } from '../data/clan-data';
+
+const completedProjects = projects.filter(p => p.status === 'completed');
+const constructionProjects = projects.filter(p => p.status === 'construction');
+---
+
+<section id="proyectos" class="relative py-20 px-4 md:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    {/* Section Title */}
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-black mb-4">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400">
+          Proyectos del Clan
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full mb-4"></div>
+      <p class="text-gray-400 text-lg">Construcciones épicas y ambiciosas</p>
+    </div>
+
+    {/* Completed Projects */}
+    {completedProjects.length > 0 && (
+      <div class="mb-20">
+        <div class="flex items-center gap-3 mb-8">
+          <h3 class="text-3xl font-bold text-green-400">✓ Completados</h3>
+          <span class="px-3 py-1 bg-green-500/20 border border-green-500/50 text-green-400 text-sm font-bold rounded-full">
+            {completedProjects.length}
+          </span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          {completedProjects.map((project) => (
+            <div key={project.id} class="group relative bg-gradient-to-br from-gray-900 to-black border border-green-500/30 rounded-xl overflow-hidden hover:border-green-400/60 transition-all duration-300">
+              {/* Image */}
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src={project.images[0]}
+                  alt={project.name}
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h3 class="text-2xl font-black text-white mb-2">{project.name}</h3>
+                  <span class="inline-block px-3 py-1 bg-green-500/30 border border-green-400 text-green-300 text-xs font-bold rounded">
+                    ✓ COMPLETADO
+                  </span>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div class="p-6">
+                <p class="text-gray-300 mb-4">{project.description}</p>
+
+                {/* Stats */}
+                <div class="grid grid-cols-2 gap-4 mb-4">
+                  <div class="bg-black/50 rounded-lg p-3 text-center border border-green-500/20">
+                    <p class="text-xs text-gray-500 mb-1">Iniciado</p>
+                    <p class="text-sm font-bold text-green-400">
+                      {new Date(project.startDate).toLocaleDateString('es-ES', { year: 'numeric', month: 'short' })}
+                    </p>
+                  </div>
+                  <div class="bg-black/50 rounded-lg p-3 text-center border border-green-500/20">
+                    <p class="text-xs text-gray-500 mb-1">Completado</p>
+                    <p class="text-sm font-bold text-green-400">
+                      {project.completionDate
+                        ? new Date(project.completionDate).toLocaleDateString('es-ES', { year: 'numeric', month: 'short' })
+                        : 'En progreso'}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Additional Images */}
+                {project.images.length > 1 && (
+                  <div class="flex gap-2">
+                    {project.images.slice(1).map((img, idx) => (
+                      <div key={idx} class="flex-1 h-20 rounded-lg overflow-hidden border border-green-500/20">
+                        <img src={img} alt="proyecto" class="w-full h-full object-cover" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {/* In Construction Projects */}
+    {constructionProjects.length > 0 && (
+      <div>
+        <div class="flex items-center gap-3 mb-8">
+          <h3 class="text-3xl font-bold text-orange-400">⚙️ En Construcción</h3>
+          <span class="px-3 py-1 bg-orange-500/20 border border-orange-500/50 text-orange-400 text-sm font-bold rounded-full">
+            {constructionProjects.length}
+          </span>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          {constructionProjects.map((project) => (
+            <div key={project.id} class="group relative bg-gradient-to-br from-gray-900 to-black border border-orange-500/30 rounded-xl overflow-hidden hover:border-orange-400/60 transition-all duration-300">
+              {/* Image */}
+              <div class="relative h-64 overflow-hidden">
+                <img
+                  src={project.images[0]}
+                  alt={project.name}
+                  class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500 opacity-75"
+                />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent"></div>
+                <div class="absolute inset-0 flex items-center justify-center">
+                  <div class="text-center">
+                    <div class="text-4xl mb-2">⚙️</div>
+                    <p class="text-orange-400 font-bold">EN CONSTRUCCIÓN</p>
+                  </div>
+                </div>
+                <div class="absolute bottom-4 left-4 right-4">
+                  <h3 class="text-2xl font-black text-white">{project.name}</h3>
+                </div>
+              </div>
+
+              {/* Content */}
+              <div class="p-6">
+                <p class="text-gray-300 mb-4">{project.description}</p>
+
+                {/* Stats */}
+                <div class="bg-orange-500/10 border border-orange-500/30 rounded-lg p-4 mb-4">
+                  <div class="flex items-center justify-between">
+                    <div>
+                      <p class="text-xs text-gray-500 mb-1">Iniciado</p>
+                      <p class="text-sm font-bold text-orange-400">
+                        {new Date(project.startDate).toLocaleDateString('es-ES', { year: 'numeric', month: 'short' })}
+                      </p>
+                    </div>
+                    <div class="text-center">
+                      <div class="text-2xl font-black text-orange-400">⚡</div>
+                      <p class="text-xs text-gray-500">Progreso</p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Additional Images */}
+                {project.images.length > 1 && (
+                  <div class="flex gap-2">
+                    {project.images.slice(1).map((img, idx) => (
+                      <div key={idx} class="flex-1 h-20 rounded-lg overflow-hidden border border-orange-500/20">
+                        <img src={img} alt="proyecto" class="w-full h-full object-cover opacity-75" />
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+  </div>
+</section>
+
+<style>
+  section {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(20, 0, 0, 0.3) 100%);
+    border-top: 1px solid rgba(249, 115, 22, 0.1);
+  }
+</style>

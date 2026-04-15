@@ -1,0 +1,138 @@
+---
+// Contributions Component
+import { clanData } from '../data/clan-data';
+
+// Get sorted contributions
+const contributions = clanData.members
+  .filter(m => !m.isFormer)
+  .map(m => ({
+    ...m,
+    ranking: 0,
+  }))
+  .sort((a, b) => b.contributions - a.contributions)
+  .slice(0, 10)
+  .map((m, i) => ({ ...m, ranking: i + 1 }));
+
+const top3 = contributions.slice(0, 3);
+const rest = contributions.slice(3);
+
+const getRankEmoji = (rank: number) => {
+  if (rank === 1) return '🥇';
+  if (rank === 2) return '🥈';
+  if (rank === 3) return '🥉';
+  return `#${rank}`;
+};
+---
+
+<section id="aportaciones" class="relative py-20 px-4 md:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    {/* Section Title */}
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-black mb-4">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400">
+          Aportaciones
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full mb-4"></div>
+      <p class="text-gray-400 text-lg">Top 10 Contribuyentes del Clan</p>
+    </div>
+
+    {/* Top 3 Podium */}
+    <div class="mb-12 grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
+      {top3.map((member, idx) => {
+        const heights = ['h-32', 'h-40', 'h-28'];
+        const colors = ['from-yellow-500 to-amber-600', 'from-slate-300 to-slate-400', 'from-amber-600 to-amber-700'];
+
+        return (
+          <div key={member.id} class="flex flex-col items-center">
+            {/* Podium */}
+            <div class={`w-full ${heights[idx]} bg-gradient-to-t ${colors[idx]} rounded-t-lg flex items-end justify-center text-center pb-4 relative overflow-hidden`}>
+              <div class="absolute inset-0 opacity-20 mix-blend-overlay" style="background-image: repeating-conic-gradient(from 0deg at 1px 1px, rgba(255,255,255,0.1) 0deg 90deg); background-size: 20px 20px;"></div>
+              <div class="relative z-10">
+                <div class="text-4xl font-black text-white shadow-lg">{getRankEmoji(member.ranking)}</div>
+                <div class="text-xs font-bold text-white/80 mt-1">PUESTO {member.ranking}</div>
+              </div>
+            </div>
+
+            {/* Card */}
+            <div class="w-full bg-gradient-to-b from-gray-800 to-black border-2 border-t-0 border-orange-500/30 rounded-b-lg p-4">
+              <img
+                src={member.avatar}
+                alt={member.username}
+                class="w-16 h-16 rounded-full border-2 border-orange-400 mx-auto mb-3 object-cover"
+              />
+              <h3 class="font-bold text-white text-center mb-1">{member.username}</h3>
+              <p class="text-orange-400 text-sm font-bold text-center">{member.contributions} puntos</p>
+            </div>
+          </div>
+        );
+      })}
+    </div>
+
+    {/* Rest of Members */}
+    {rest.length > 0 && (
+      <div class="max-w-3xl mx-auto mb-8">
+        <h3 class="text-xl font-bold text-white mb-4 px-4">Otros Destacados</h3>
+        <div class="space-y-3">
+          {rest.map((member) => (
+            <div key={member.id} class="group relative bg-gradient-to-r from-gray-900 to-black border border-orange-500/20 rounded-lg p-4 hover:border-orange-500/50 transition-all duration-300">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-4 flex-1">
+                  <div class="text-2xl font-black text-orange-500/60 min-w-10">#{member.ranking}</div>
+                  <img src={member.avatar} alt={member.username} class="w-12 h-12 rounded-full border border-orange-500/50 object-cover" />
+                  <div>
+                    <h4 class="font-bold text-white">{member.username}</h4>
+                    <p class="text-xs text-gray-500">{member.role}</p>
+                  </div>
+                </div>
+                <div class="text-right">
+                  <p class="text-2xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-red-500">
+                    {member.contributions}
+                  </p>
+                  <p class="text-xs text-gray-500">puntos</p>
+                </div>
+              </div>
+
+              {/* Progress Bar */}
+              <div class="mt-3 bg-gray-800 rounded-full h-1.5 overflow-hidden">
+                <div
+                  class="h-full bg-gradient-to-r from-red-500 to-orange-500 transition-all duration-500"
+                  style={{ width: `${(member.contributions / contributions[0].contributions) * 100}%` }}
+                ></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )}
+
+    {/* Stats */}
+    <div class="grid md:grid-cols-3 gap-6 mt-12">
+      <div class="bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-lg p-6 text-center">
+        <p class="text-gray-500 text-sm mb-2">Mayor Aportante</p>
+        <p class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500">
+          {contributions[0]?.username || 'N/A'}
+        </p>
+      </div>
+      <div class="bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-lg p-6 text-center">
+        <p class="text-gray-500 text-sm mb-2">Puntos Totales (Top 10)</p>
+        <p class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400">
+          {contributions.reduce((sum, m) => sum + m.contributions, 0)}
+        </p>
+      </div>
+      <div class="bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-lg p-6 text-center">
+        <p class="text-gray-500 text-sm mb-2">Promedio (Top 10)</p>
+        <p class="text-3xl font-black text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500">
+          {Math.round(contributions.reduce((sum, m) => sum + m.contributions, 0) / contributions.length)}
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  section {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(20, 0, 0, 0.3) 100%);
+    border-top: 1px solid rgba(249, 115, 22, 0.1);
+  }
+</style>

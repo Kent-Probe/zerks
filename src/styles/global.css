@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap");
+
+@import "tailwindcss";
+@import "@fontsource/press-start-2p";
+
+/* Minecraft-style fonts */
+:root {
+  --font-minecraft: "Press Start 2P", monospace;
+  --font-main: "Inter", sans-serif;
+  --color-principal: #7a0f0f;
+  --color-secundario: #470a00;
+}
+
+.minecraft-font {
+  font-family: var(--font-minecraft);
+}
+
+* {
+  font-family: var(--font-main);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: radial-gradient(circle at 20% 15%, #1a0505 0%, #070101 45%, #000000 100%);
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  background-image:
+    radial-gradient(2px 2px at 15% 20%, rgba(71, 10, 0, 0.32), transparent 80%),
+    radial-gradient(1.5px 1.5px at 70% 35%, rgba(122, 15, 15, 0.2), transparent 80%),
+    radial-gradient(2px 2px at 40% 80%, rgba(71, 10, 0, 0.35), transparent 80%),
+    radial-gradient(1.5px 1.5px at 85% 70%, rgba(122, 15, 15, 0.22), transparent 80%);
+  background-size: 220px 220px;
+  animation: ember-drift 18s linear infinite;
+  opacity: 0.65;
+}
+
+body::after {
+  background-image:
+    radial-gradient(1px 1px at 30% 60%, rgba(71, 10, 0, 0.25), transparent 80%),
+    radial-gradient(1px 1px at 65% 15%, rgba(122, 15, 15, 0.18), transparent 80%),
+    radial-gradient(1px 1px at 80% 40%, rgba(71, 10, 0, 0.3), transparent 80%);
+  background-size: 280px 280px;
+  animation: ember-drift-reverse 24s linear infinite;
+  opacity: 0.55;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, var(--color-principal), var(--color-secundario));
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, var(--color-secundario), var(--color-principal));
+}
+
+/* Selection color */
+::selection {
+  background: linear-gradient(to right, var(--color-principal), var(--color-secundario));
+  color: white;
+}
+
+/* Minecraft blocks animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.minecraft-block {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Glow effect */
+.glow {
+  box-shadow:
+    0 0 20px rgba(122, 15, 15, 0.45),
+    0 0 40px rgba(71, 10, 0, 0.25);
+}
+
+.glow:hover {
+  box-shadow:
+    0 0 30px rgba(122, 15, 15, 0.7),
+    0 0 60px rgba(71, 10, 0, 0.45);
+}
+
+/* Smooth transitions */
+a,
+button {
+  transition: all 0.3s ease;
+}
+
+/* Minecraft border effect */
+.minecraft-border {
+  border: 2px solid var(--color-secundario);
+  box-shadow: inset 0 0 0 1px var(--color-principal);
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Animations for content */
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-slideInUp {
+  animation: slideInUp 0.6s ease-out;
+}
+
+.animate-slideInDown {
+  animation: slideInDown 0.6s ease-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.6s ease-out;
+}
+
+@keyframes ember-drift {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-8px, -18px, 0);
+  }
+  100% {
+    transform: translate3d(0, -36px, 0);
+  }
+}
+
+@keyframes ember-drift-reverse {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(10px, 14px, 0);
+  }
+  100% {
+    transform: translate3d(0, 28px, 0);
+  }
+}
+
+/* Atenuar naranja para que el rojo sea el protagonista visual */
+.text-orange-400,
+.hover\:text-orange-400:hover {
+  color: #b33a22 !important;
+}
+
+.border-orange-500\/20,
+.border-orange-500\/30,
+.border-orange-500\/50,
+.border-orange-500\/60,
+.border-orange-500\/80 {
+  border-color: rgba(105, 28, 18, 0.6) !important;
+}
+
+.bg-orange-500\/10,
+.bg-orange-500\/20,
+.bg-orange-500\/30 {
+  background-color: rgba(71, 10, 0, 0.25) !important;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 2.5rem !important;
+  }
+
+  h2 {
+    font-size: 2rem !important;
+  }
+}

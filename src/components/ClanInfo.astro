@@ -1,0 +1,154 @@
+---
+// Clan Info Component
+import { clanData, projects } from "../data/clan-data";
+
+const totalMembers = clanData.members.map((m) => !m.role !== "UNMEMBER").length;
+console.log(totalMembers);
+
+const notableMembers = clanData.members.filter((m) => m.isNotable && !m.isFormer);
+const formerMembers = clanData.members.filter((m) => m.isFormer);
+---
+
+<section id="clan" class="relative py-20 px-4 md:px-8 overflow-hidden">
+  <div class="max-w-7xl mx-auto">
+    {/* Section Title */}
+    <div class="text-center mb-16">
+      <h2 class="text-5xl md:text-6xl font-black mb-4">
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-orange-500 to-yellow-400">
+          Información del Clan
+        </span>
+      </h2>
+      <div class="w-24 h-1 bg-gradient-to-r from-red-500 to-orange-500 mx-auto rounded-full"></div>
+    </div>
+
+    {/* Main Info Grid */}
+    <div class="grid md:grid-cols-3 gap-6 mb-16">
+      {/* Miembros */}
+      <div
+        class="group relative bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-lg p-8 hover:border-orange-500/60 transition-all duration-300 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-red-500/0 via-orange-500/0 to-red-500/0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+        >
+        </div>
+        <div class="relative z-10">
+          <div
+            class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 mb-2"
+          >
+            {totalMembers}
+          </div>
+          <p class="text-gray-400 text-sm uppercase tracking-widest font-semibold">Miembros Activos</p>
+        </div>
+      </div>
+
+      {/* Fundación */}
+      <div
+        class="group relative bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-lg p-8 hover:border-orange-500/60 transition-all duration-300 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-red-500/0 via-orange-500/0 to-red-500/0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+        >
+        </div>
+        <div class="relative z-10">
+          <div class="text-2xl font-bold text-orange-400 mb-2">
+            {
+              new Date(clanData.foundationDate).toLocaleDateString("es-ES", {
+                year: "numeric",
+                month: "long",
+                day: "numeric",
+              })
+            }
+          </div>
+          <p class="text-gray-400 text-sm uppercase tracking-widest font-semibold">Fundación del Clan</p>
+        </div>
+      </div>
+
+      {/* Proyectos */}
+      <div
+        class="group relative bg-gradient-to-br from-gray-900 to-black border border-orange-500/20 rounded-lg p-8 hover:border-orange-500/60 transition-all duration-300 overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-red-500/0 via-orange-500/0 to-red-500/0 opacity-0 group-hover:opacity-10 transition-opacity duration-300"
+        >
+        </div>
+        <div class="relative z-10">
+          <div
+            class="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-orange-500 mb-2"
+          >
+            {projects.length}
+          </div>
+          <p class="text-gray-400 text-sm uppercase tracking-widest font-semibold">Proyectos</p>
+        </div>
+      </div>
+    </div>
+
+    {/* Notable Members */}
+    {
+      notableMembers.length > 0 && (
+        <div class="mb-16">
+          <h3 class="text-3xl font-bold text-white mb-8 flex items-center gap-2">
+            <span class="text-2xl">⭐</span>
+            Miembros Notables
+          </h3>
+          <div class="grid md:grid-cols-3 gap-6">
+            {notableMembers.map((member) => (
+              <div class="group relative bg-gradient-to-br from-gray-900 to-black border border-orange-500/30 rounded-lg overflow-hidden hover:border-orange-500/80 transition-all duration-300 hover:shadow-xl hover:shadow-orange-500/20">
+                <div class="absolute inset-0 bg-gradient-to-r from-red-500/0 to-orange-500/0 opacity-0 group-hover:opacity-20 transition-opacity duration-300" />
+                <div class="relative z-10 p-6 text-center">
+                  <img
+                    src={member.avatar}
+                    alt={member.username}
+                    class="w-20 h-20 rounded-full mx-auto mb-4 border-2 border-orange-500 group-hover:border-yellow-400 transition-all duration-300"
+                  />
+                  <h4 class="text-xl font-bold text-white mb-1">{member.username}</h4>
+                  <p class="text-orange-400 text-sm font-semibold uppercase tracking-widest">{member.role}</p>
+                  <p class="text-gray-500 text-xs mt-3">
+                    Desde {new Date(member.joinDate).toLocaleDateString("es-ES")}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
+
+    {/* Former Important Members */}
+    {
+      formerMembers.length > 0 && (
+        <div class="mb-16">
+          <h3 class="text-3xl font-bold text-white mb-8 flex items-center gap-2">
+            <span class="text-2xl">🕊️</span>
+            Legendas que se Fueron
+          </h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            {formerMembers.map((member) => (
+              <div class="group relative bg-gradient-to-br from-gray-900/50 to-black border border-gray-600/30 rounded-lg overflow-hidden hover:border-orange-500/60 transition-all duration-300">
+                <div class="absolute inset-0 bg-gradient-to-r from-gray-500/0 to-gray-500/0 opacity-0 group-hover:opacity-10 transition-opacity duration-300" />
+                <div class="relative z-10 p-6 flex items-center gap-4">
+                  <img
+                    src={member.avatar}
+                    alt={member.username}
+                    class="w-16 h-16 rounded-full border-2 border-gray-600 opacity-70"
+                  />
+                  <div>
+                    <h4 class="text-lg font-bold text-gray-300">{member.username}</h4>
+                    <p class="text-orange-400 text-sm font-semibold uppercase tracking-widest">{member.role}</p>
+                    <p class="text-gray-600 text-xs mt-1">Contribuciones: {member.contributions} puntos</p>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      )
+    }
+  </div>
+</section>
+
+<style>
+  section {
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.5) 0%, rgba(20, 0, 0, 0.3) 100%);
+    border-top: 1px solid rgba(249, 115, 22, 0.1);
+  }
+</style>

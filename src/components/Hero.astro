@@ -1,0 +1,103 @@
+---
+// Hero/Header Component
+import { clanData } from "../data/clan-data";
+---
+
+<section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
+  {/* Minecraft Background Pattern */}
+  <div class="absolute inset-0 opacity-5">
+    <div
+      class="absolute inset-0 bg-repeat"
+      style=`bg-[url(/src/assets/minecraft-launcher.svg)] repeating-conic-gradient(from 0deg at 1px 1px, rgba(255,255,255,0.1) 0deg 90deg, rgba(255,255,255,0) 90deg); background-size: 50px 50px;`
+    >
+    </div>
+  </div>
+
+  {/* Animated gradient blobs */}
+  <div
+    class="absolute top-0 -left-20 w-[30rem] h-[30rem] bg-red-700/45 rounded-full filter blur-3xl animate-blob pointer-events-none"
+  >
+  </div>
+  <div
+    class="absolute -top-8 -right-20 w-[30rem] h-[30rem] bg-red-900/40 rounded-full filter blur-3xl animate-blob animation-delay-2000 pointer-events-none"
+  >
+  </div>
+  <div
+    class="absolute -bottom-24 left-1/2 -translate-x-1/2 w-[32rem] h-[32rem] bg-[#470A00]/45 rounded-full filter blur-3xl animate-blob animation-delay-4000 pointer-events-none"
+  >
+  </div>
+
+  {/* Content */}
+  <div class="relative z-10 max-w-4xl mx-auto px-4 text-center">
+    {/* Logo Grande */}
+    <div class="mb-8 inline-block">
+      <img src="/logo_zerks.png" alt="Logo de ZERKS" class="w-32 h-32 md:w-48 md:h-48 object-contain" />
+    </div>
+
+    {/* Title */}
+    <h1 class="text-6xl md:text-7xl font-black mb-4 leading-tight">
+      <span class="minecraft-font text-transparent bg-clip-text bg-gradient-to-r from-red-700 via-red-600 to-red-400">
+        ZERKS
+      </span>
+    </h1>
+
+    {/* Subtitle */}
+    <p class="text-xl md:text-2xl text-gray-300 mb-4 font-semibold">Top 5 clan mas fuerte dentro de Dioses MC</p>
+
+    {/* Description */}
+    <p class="text-gray-400 text-lg mb-12 max-w-2xl mx-auto leading-relaxed">
+      {clanData.description}
+    </p>
+
+    {/* CTA Buttons */}
+    <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <a
+        href="#clan"
+        class="px-8 py-4 bg-gradient-to-r from-red-800 to-red-600 text-white rounded-lg font-bold text-lg hover:shadow-lg hover:shadow-red-900/60 transition-all duration-300 transform hover:scale-105"
+      >
+        Explorar Clan
+      </a>
+      <a
+        href={clanData.discordInvite}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-8 py-4 bg-gray-800 border-2 border-red-900/80 text-red-300 rounded-lg font-bold text-lg hover:bg-red-900/20 transition-all duration-300"
+      >
+        Discord
+      </a>
+    </div>
+
+    {/* Server IP */}
+    <div class="mt-16 pt-8 border-t border-red-900/60">
+      <p class="text-gray-500 text-sm mb-2">IP del Servidor</p>
+      <p class="text-2xl font-mono text-red-300 font-bold">{clanData.serverIp}</p>
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes blob {
+    0%,
+    100% {
+      transform: translate(0, 0) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+  }
+
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+</style>

@@ -1,11 +1,26 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import ClanInfo from "../components/ClanInfo.astro";
+import FloatingJoinButton from "../components/FloatingJoinButton.astro";
+import Footer from "../components/Footer.astro";
+import Hero from "../components/Hero.astro";
+import Hierarchy from "../components/Hierarchy.astro";
+import Members from "../components/Members.astro";
+import Navbar from "../components/Navbar.astro";
+import Projects from "../components/Projects.astro";
+import Layout from "../layouts/Layout.astro";
 ---
 
-<Layout>
-	<Welcome />
+<Layout
+  title="ZERKS"
+  description="El clan top 5 de DiosesMC. Únete a nuestra comunidad de constructores, mineros y guerreros."
+>
+  <Navbar />
+  <Hero />
+  <ClanInfo />
+  <Hierarchy />
+  <Members />
+  <!-- <Contributions /> -->
+  <Projects />
+  <Footer />
+  <FloatingJoinButton />
 </Layout>
