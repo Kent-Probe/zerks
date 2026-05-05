@@ -1,7 +1,13 @@
 import type { ClanInfo, ClanMember, MemberRole, Project } from "../types/clan";
 import discordMembers from "./discord-members.json";
 
-const membersNotables = ["691638128678666310", "1215450133978685483"];
+const membersNotables = [
+  "1449213449782693968",
+  "279803015123435522",
+  "990862356819111977",
+  "691638128678666310",
+  "1215450133978685483",
+];
 
 const defaultMembers: ClanMember[] = [
   // ADMIN

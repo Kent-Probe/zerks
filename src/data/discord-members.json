@@ -51,7 +51,7 @@
     "role": "UNMEMBER",
     "joinDate": "2026-04-09",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/286642651581906945/10b9bf70d683fe8396ce9b1e808921b8.png"
+    "avatar": "https://cdn.discordapp.com/avatars/286642651581906945/dd4c6e2734698c61d5e5645507127e3c.png"
   },
   {
     "id": "dc-294455497921134595",
@@ -65,8 +65,8 @@
   {
     "id": "dc-308637071936061441",
     "discordId": "308637071936061441",
-    "username": "PVP | TastChill",
-    "role": "MIEMBRO",
+    "username": "TastChill",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-28",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/308637071936061441/80ef2fca3192fb35f694133c9039b65a.png"
@@ -88,6 +88,15 @@
     "joinDate": "2026-03-12",
     "contributions": 0,
     "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Cap-PVP%20%7C%20BerserkrJuan"
+  },
+  {
+    "id": "dc-345732373184380929",
+    "discordId": "345732373184380929",
+    "username": "Recluta | fabian0150dt2",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-28",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/345732373184380929/199cce98e5e946c132b320cce13af34b.png"
   },
   {
     "id": "dc-351460918091055107",
@@ -150,7 +159,7 @@
     "role": "MIEMBRO",
     "joinDate": "2026-03-12",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/422504577376452608/80b0e01c089e9357c78456d181c13c22.png"
+    "avatar": "https://cdn.discordapp.com/avatars/422504577376452608/aca8ea918163457f1d0782fdb37f903f.png"
   },
   {
     "id": "dc-462819326336958466",
@@ -159,7 +168,7 @@
     "role": "MIEMBRO",
     "joinDate": "2026-03-02",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/462819326336958466/71a4c80e4c08cd5c4147aa8c3ca16543.png"
+    "avatar": "https://cdn.discordapp.com/avatars/462819326336958466/ad46328e64bcdfb4aaa88884b82624c8.png"
   },
   {
     "id": "dc-465201764761600000",
@@ -189,6 +198,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/478093856668123148/437669dbd2328617b2270126954702af.png"
   },
   {
+    "id": "dc-478293288445804555",
+    "discordId": "478293288445804555",
+    "username": "Builder | 𝕲𝖊𝖔𝖗𝖌𝖊 𝕾𝖊𝖗𝖆",
+    "role": "RECLUTADOR",
+    "joinDate": "2026-04-19",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/478293288445804555/abdc33e3b6f55a2ad6008bbbf31eec61.png"
+  },
+  {
     "id": "dc-479639053633847307",
     "discordId": "479639053633847307",
     "username": "Ally | thegooddoctor",
@@ -207,10 +225,19 @@
     "avatar": "https://cdn.discordapp.com/avatars/481569270271049768/6228cae8fada5206a34568f78b4e6cdc.png"
   },
   {
+    "id": "dc-483711782997983253",
+    "discordId": "483711782997983253",
+    "username": "Recluta | garay_11",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-27",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/483711782997983253/68eee09e66aae81e1d79b6b2d401d557.png"
+  },
+  {
     "id": "dc-490900616126660608",
     "discordId": "490900616126660608",
     "username": "alan_rm7",
-    "role": "UNMEMBER",
+    "role": "MIEMBRO",
     "joinDate": "2025-10-15",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/490900616126660608/0a4a11378659345ff48723a9a5d11e4c.png"
@@ -261,6 +288,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/518054265319718913/5aaefb883028b347f0315d9b86857f56.png"
   },
   {
+    "id": "dc-518366220966297610",
+    "discordId": "518366220966297610",
+    "username": "Cap-Pescador | Francost",
+    "role": "CAPITAN",
+    "joinDate": "2026-05-01",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/518366220966297610/81c6b07ff2f836e219f08939d9771b5f.png"
+  },
+  {
     "id": "dc-535889384054980608",
     "discordId": "535889384054980608",
     "username": "PVP | MentalssToNy",
@@ -276,16 +312,16 @@
     "role": "UNMEMBER",
     "joinDate": "2026-03-23",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/538034307667722261/fab8e2e6536be595fac8c64476c0ce8b.png"
+    "avatar": "https://cdn.discordapp.com/avatars/538034307667722261/67b379b6628e23de7f55a542aeaf2fc7.png"
   },
   {
-    "id": "dc-556674617960300575",
-    "discordId": "556674617960300575",
-    "username": "Recluta | kkevin63",
-    "role": "MIEMBRO",
-    "joinDate": "2026-04-13",
+    "id": "dc-583087601775542292",
+    "discordId": "583087601775542292",
+    "username": "Ally | Worloking",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-19",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/556674617960300575/84e22b52b60ec0cae3a499d6d67c1990.png"
+    "avatar": "https://cdn.discordapp.com/avatars/583087601775542292/3e20da2ae14e203690715b3c70220960.png"
   },
   {
     "id": "dc-600380247707484190",
@@ -303,12 +339,12 @@
     "role": "MIEMBRO",
     "joinDate": "2026-03-07",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/607978253180731403/c147b98838062f2e27f0551daffa43a6.png"
+    "avatar": "https://cdn.discordapp.com/avatars/607978253180731403/ec052d9f671c468f530362a2c0872f61.png"
   },
   {
     "id": "dc-608449639389331493",
     "discordId": "608449639389331493",
-    "username": "Farmer | Hostigador de Worloking",
+    "username": "Farmer | hostigador de worloking",
     "role": "MIEMBRO",
     "joinDate": "2026-03-07",
     "contributions": 0,
@@ -326,7 +362,7 @@
   {
     "id": "dc-620074112525533184",
     "discordId": "620074112525533184",
-    "username": "Cap-Decorador | haruu11 (Love) ❤❤❤❤",
+    "username": "Cap-Decorador | haruu",
     "role": "CAPITAN",
     "joinDate": "2026-03-03",
     "contributions": 0,
@@ -380,17 +416,17 @@
   {
     "id": "dc-663021870446280705",
     "discordId": "663021870446280705",
-    "username": "KURONA67",
+    "username": "KURONAG1",
     "role": "UNMEMBER",
     "joinDate": "2026-03-23",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/663021870446280705/1b523dcbda8c0418cb5f15b9ca3f10bb.png"
+    "avatar": "https://cdn.discordapp.com/avatars/663021870446280705/43e17c5d402437cbf61c354076d32057.png"
   },
   {
     "id": "dc-665204887692247081",
     "discordId": "665204887692247081",
-    "username": "PVP | Cabyte",
-    "role": "MIEMBRO",
+    "username": "Mothin",
+    "role": "UNMEMBER",
     "joinDate": "2026-03-08",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/665204887692247081/64e4b9e971c6eef913b805c22cedb27e.png"
@@ -414,13 +450,22 @@
     "avatar": "https://cdn.discordapp.com/avatars/678862040496078848/85eaec3a9fc6c4dee5bc3bf88d2309bf.png"
   },
   {
-    "id": "dc-679399526271942701",
-    "discordId": "679399526271942701",
-    "username": "PVP | Aaronlv08",
-    "role": "UNMEMBER",
-    "joinDate": "2026-04-12",
+    "id": "dc-684550975406473242",
+    "discordId": "684550975406473242",
+    "username": "Técnico | CentinelaThe",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-28",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/679399526271942701/1e1bc5f83cd74b1c372a55c527f16132.png"
+    "avatar": "https://cdn.discordapp.com/avatars/684550975406473242/b9e3fd7d9060b7b667912a8f305116cd.png"
+  },
+  {
+    "id": "dc-685308774264864787",
+    "discordId": "685308774264864787",
+    "username": "Colider | Sanguchito",
+    "role": "COLIDER",
+    "joinDate": "2026-04-26",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/685308774264864787/e8924d48fbdd794c9b27316da2d87617.png"
   },
   {
     "id": "dc-691638128678666310",
@@ -441,13 +486,13 @@
     "avatar": "https://cdn.discordapp.com/avatars/694919739688091680/c97f88ce0c3ec3d17954e8b41dcec5e4.png"
   },
   {
-    "id": "dc-695361104846782474",
-    "discordId": "695361104846782474",
-    "username": "Juliette",
+    "id": "dc-708050328234360903",
+    "discordId": "708050328234360903",
+    "username": "Rutor",
     "role": "UNMEMBER",
-    "joinDate": "2026-02-28",
+    "joinDate": "2026-05-03",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/695361104846782474/329e1c42182456d4bd8f1c350fdc914c.png"
+    "avatar": "https://cdn.discordapp.com/avatars/708050328234360903/278621ac125963a6959b6b646bc585cd.png"
   },
   {
     "id": "dc-708862033524686851",
@@ -470,11 +515,11 @@
   {
     "id": "dc-720342967294099468",
     "discordId": "720342967294099468",
-    "username": "PVP |  pamquespan10",
-    "role": "MIEMBRO",
+    "username": "Lio_77",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-03",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/720342967294099468/af7ff4500d848924c46869e32099cec1.png"
+    "avatar": "https://cdn.discordapp.com/avatars/720342967294099468/b25f67bfe4045cdf44f94d029f5c6e5c.png"
   },
   {
     "id": "dc-721649441735573527",
@@ -492,13 +537,13 @@
     "role": "COLIDER",
     "joinDate": "2025-11-04",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/727385006665891892/5ba2fe73ab7ecf27675042c16c5fdae6.png"
+    "avatar": "https://cdn.discordapp.com/avatars/727385006665891892/9f0ac4701d85a7cc3cae258ce85b47cf.png"
   },
   {
     "id": "dc-727601598599004191",
     "discordId": "727601598599004191",
-    "username": "PVP | alex_3554",
-    "role": "MIEMBRO",
+    "username": "! VVS JK3R $",
+    "role": "UNMEMBER",
     "joinDate": "2026-03-07",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/727601598599004191/c080083cb20917820f37922bd7e63bba.png"
@@ -533,7 +578,7 @@
   {
     "id": "dc-750411799157014691",
     "discordId": "750411799157014691",
-    "username": "PVP | XenoxBloody",
+    "username": "xBloody_",
     "role": "UNMEMBER",
     "joinDate": "2026-03-17",
     "contributions": 0,
@@ -558,15 +603,6 @@
     "avatar": "https://cdn.discordapp.com/avatars/751580321199423498/414c9c4ac37981eae21f8906841079d1.png"
   },
   {
-    "id": "dc-751661961963503647",
-    "discordId": "751661961963503647",
-    "username": "aaronrcantos",
-    "role": "UNMEMBER",
-    "joinDate": "2026-02-28",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/751661961963503647/9713afcaa4ecf2d0b8ffd4ca9a3fb66b.png"
-  },
-  {
     "id": "dc-751961076761100390",
     "discordId": "751961076761100390",
     "username": "furiegox",
@@ -587,7 +623,7 @@
   {
     "id": "dc-754046053418008576",
     "discordId": "754046053418008576",
-    "username": "Ally | ARTARIS RED",
+    "username": "ARTARIS RED",
     "role": "UNMEMBER",
     "joinDate": "2025-12-28",
     "contributions": 0,
@@ -596,7 +632,7 @@
   {
     "id": "dc-761203002714750977",
     "discordId": "761203002714750977",
-    "username": "Ally | Cold Scrawny",
+    "username": "Cold Scrawny",
     "role": "UNMEMBER",
     "joinDate": "2025-10-14",
     "contributions": 0,
@@ -630,6 +666,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/776786634073964564/d12333dfc62f280f869e576e2fc4cd53.png"
   },
   {
+    "id": "dc-777256274848776202",
+    "discordId": "777256274848776202",
+    "username": "PVP END | Alx",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-03",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/777256274848776202/febff43b06f3218cde17674f5d81e58a.png"
+  },
+  {
     "id": "dc-777529808325181460",
     "discordId": "777529808325181460",
     "username": "Ally | guepar__",
@@ -650,11 +695,29 @@
   {
     "id": "dc-783885316779671582",
     "discordId": "783885316779671582",
-    "username": "⇝Gιαɳ⇜",
-    "role": "UNMEMBER",
+    "username": "Recluta | _whoisf1us_",
+    "role": "MIEMBRO",
     "joinDate": "2026-04-14",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/783885316779671582/1474f708f3347d31601e20029193cf92.png"
+    "avatar": "https://cdn.discordapp.com/avatars/783885316779671582/aa2ae46c64a8219f4c249bc6c74d2140.png"
+  },
+  {
+    "id": "dc-792145753740148757",
+    "discordId": "792145753740148757",
+    "username": "Ally | rolandoagust",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-21",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/792145753740148757/a2a270b3c4c579e5ca12cc90edbf70b6.png"
+  },
+  {
+    "id": "dc-794928453429755934",
+    "discordId": "794928453429755934",
+    "username": "Djmanolas",
+    "role": "UNMEMBER",
+    "joinDate": "2026-05-02",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/794928453429755934/13c94b77699d8c10d7cef1053caae7ae.png"
   },
   {
     "id": "dc-796938517275475969",
@@ -668,16 +731,16 @@
   {
     "id": "dc-804556990537269298",
     "discordId": "804556990537269298",
-    "username": "Colider | WattsitoElmascaPito",
-    "role": "COLIDER",
+    "username": "Admin | Watts",
+    "role": "ADMIN",
     "joinDate": "2025-11-11",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/804556990537269298/ded606e379883b6cf30aaa03c263b65f.png"
+    "avatar": "https://cdn.discordapp.com/avatars/804556990537269298/e1f2c1713db8baeeaa9a298fcc80629f.png"
   },
   {
     "id": "dc-806414302097309726",
     "discordId": "806414302097309726",
-    "username": "Cap-PVP | Andres",
+    "username": "Leader-PVP | ommet",
     "role": "CAPITAN",
     "joinDate": "2026-03-08",
     "contributions": 0,
@@ -690,7 +753,7 @@
     "role": "MIEMBRO",
     "joinDate": "2026-03-12",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/810905142042820618/8c0b878bc6da53477b72b83db0130cf6.png"
+    "avatar": "https://cdn.discordapp.com/avatars/810905142042820618/a9c9b147782b19ee9005266f0eacf5c9.png"
   },
   {
     "id": "dc-817523505821909044",
@@ -708,13 +771,31 @@
     "role": "MIEMBRO",
     "joinDate": "2026-04-12",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/819329296308764682/6b07cbe91260526570430678f7a2f7be.png"
+    "avatar": "https://cdn.discordapp.com/avatars/819329296308764682/d188346633d406d0ef16477e7e78b7a1.png"
+  },
+  {
+    "id": "dc-834044201212969021",
+    "discordId": "834044201212969021",
+    "username": "Builder | 𝕽𝖆𝖒𝖔𝖘",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-25",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/834044201212969021/a1581720f2700cdcf7295802d9d81e25.png"
+  },
+  {
+    "id": "dc-837402973419733082",
+    "discordId": "837402973419733082",
+    "username": "Ally | tukyng",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-19",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/837402973419733082/0600ddb155ff8c45530b04b8fc58e011.png"
   },
   {
     "id": "dc-837842298179944479",
     "discordId": "837842298179944479",
-    "username": "PVP | OUTLAS0",
-    "role": "MIEMBRO",
+    "username": "OUTLAS0",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-03",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/837842298179944479/61c4dc3da32676c43a0a7b4e30270e85.png"
@@ -726,16 +807,43 @@
     "role": "MIEMBRO",
     "joinDate": "2025-11-11",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/838847668532674684/898958886df195d1ac8e8c92262ce99c.png"
+    "avatar": "https://cdn.discordapp.com/avatars/838847668532674684/d454dea27e5d0c6de36e287372a2fa28.png"
+  },
+  {
+    "id": "dc-841439948207816724",
+    "discordId": "841439948207816724",
+    "username": "PVP | vento ozuna",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-29",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/841439948207816724/d586898a7b30730b000f0a7a4f312a3e.png"
+  },
+  {
+    "id": "dc-847859998868635708",
+    "discordId": "847859998868635708",
+    "username": "PVP | rbkplen",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-03",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/847859998868635708/f5ff9e8243214141eb4ac42936066543.png"
   },
   {
     "id": "dc-858301462979674143",
     "discordId": "858301462979674143",
-    "username": "ImKøđə",
+    "username": "Ally | ImKøđə",
     "role": "UNMEMBER",
     "joinDate": "2026-03-23",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/858301462979674143/80d8dd4d40515dd68ed1cb9faae3560f.png"
+  },
+  {
+    "id": "dc-859209451448696852",
+    "discordId": "859209451448696852",
+    "username": "PVP | temet",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-01",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/859209451448696852/a68f2bae3518b4ed26da162a5af90f35.png"
   },
   {
     "id": "dc-861638599790821396",
@@ -792,6 +900,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/918674853245091890/9303a6f397ef7632fd995b5a5e22caac.png"
   },
   {
+    "id": "dc-923866126151221319",
+    "discordId": "923866126151221319",
+    "username": "Ally | Dhru",
+    "role": "UNMEMBER",
+    "joinDate": "2026-05-03",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/923866126151221319/b5bfb577bb03474040caa6e6f0a38887.png"
+  },
+  {
     "id": "dc-925972012504084561",
     "discordId": "925972012504084561",
     "username": "zina",
@@ -808,15 +925,6 @@
     "joinDate": "2026-02-12",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/930470573920890951/183e805109b3e934d769aa73457c4aa2.png"
-  },
-  {
-    "id": "dc-938932605938696283",
-    "discordId": "938932605938696283",
-    "username": "O_Neeil",
-    "role": "UNMEMBER",
-    "joinDate": "2026-04-13",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/938932605938696283/4016ab630b580f1ae510d3c2fda05dfc.png"
   },
   {
     "id": "dc-938949352431443979",
@@ -839,34 +947,52 @@
   {
     "id": "dc-943281431935864863",
     "discordId": "943281431935864863",
-    "username": "PVP | RICK",
+    "username": "Cap-END | RICK",
     "role": "MIEMBRO",
     "joinDate": "2026-03-03",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/943281431935864863/043adb19f26942e5db3dda4dc9072265.png"
+    "avatar": "https://cdn.discordapp.com/avatars/943281431935864863/9b7d89f9012edb3db15adc2c5734a93c.png"
   },
   {
     "id": "dc-962087769834913812",
     "discordId": "962087769834913812",
-    "username": "Black_All",
+    "username": "Ally | Black_All",
     "role": "UNMEMBER",
     "joinDate": "2026-04-02",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/962087769834913812/1fa246f823663c43a6b0b80e17d1bc99.png"
   },
   {
+    "id": "dc-966151714610749500",
+    "discordId": "966151714610749500",
+    "username": "Recluta | GATO_BELLACO GOD",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-29",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/966151714610749500/05e1be093363d1afc00c672ffedf20b0.png"
+  },
+  {
     "id": "dc-975094480212475944",
     "discordId": "975094480212475944",
-    "username": "Therian | jovenbragado",
+    "username": "Stripper | jovenbragado",
     "role": "MIEMBRO",
     "joinDate": "2026-03-17",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/975094480212475944/0840f9b2389200cde83a4505f6528e39.png"
   },
   {
+    "id": "dc-976058745773768704",
+    "discordId": "976058745773768704",
+    "username": "Ally | MiniYop27",
+    "role": "UNMEMBER",
+    "joinDate": "2026-05-04",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/976058745773768704/4a5fac3775ed6b874f136a9627e7959d.png"
+  },
+  {
     "id": "dc-990862356819111977",
     "discordId": "990862356819111977",
-    "username": "Recluta | frank0706012005",
+    "username": "Creador | 𝓝𝓪𝓬𝓲𝓸𝓷_𝓕𝓻𝓪𝓷",
     "role": "MIEMBRO",
     "joinDate": "2026-04-04",
     "contributions": 0,
@@ -875,11 +1001,20 @@
   {
     "id": "dc-994822042723549324",
     "discordId": "994822042723549324",
-    "username": "PVP | Kynzq",
-    "role": "MIEMBRO",
+    "username": "Kynzq",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-15",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/994822042723549324/57bf8dc4559f61468cc105839bbc0150.png"
+  },
+  {
+    "id": "dc-998426180170555393",
+    "discordId": "998426180170555393",
+    "username": "Laylla",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-16",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/998426180170555393/c30b57e095ec440f9a1459bbb61d620c.png"
   },
   {
     "id": "dc-1000385804679524492",
@@ -902,16 +1037,16 @@
   {
     "id": "dc-1005133800654778448",
     "discordId": "1005133800654778448",
-    "username": "Recluta | aurefinn",
+    "username": "Herrero | ঔৣ☬✞☆Aurefinn☆✞☬ঔৣ",
     "role": "MIEMBRO",
     "joinDate": "2026-04-06",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1005133800654778448/9252cc5b2c6195b026a57903a924a145.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1005133800654778448/cf0589e1273d97f7c33a6dbd948153e0.png"
   },
   {
     "id": "dc-1018269857042669592",
     "discordId": "1018269857042669592",
-    "username": "Builder | Toxina",
+    "username": "Herrero | Toxina",
     "role": "MIEMBRO",
     "joinDate": "2025-10-18",
     "contributions": 0,
@@ -956,8 +1091,8 @@
   {
     "id": "dc-1061934744239091722",
     "discordId": "1061934744239091722",
-    "username": "Manager | TheBestMex",
-    "role": "MIEMBRO",
+    "username": "Manager | GordoBestMex",
+    "role": "ADMIN",
     "joinDate": "2026-03-10",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1061934744239091722/1fcb96ae9be2c992a2b60c2ea7db2d7b.png"
@@ -974,9 +1109,9 @@
   {
     "id": "dc-1070516953053155428",
     "discordId": "1070516953053155428",
-    "username": "Farmer | pretyboy20",
+    "username": "LilAngello",
     "role": "MIEMBRO",
-    "joinDate": "2025-12-05",
+    "joinDate": "2026-04-18",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1070516953053155428/30b5f09f03e1564910d768a2301c15b4.png"
   },
@@ -984,10 +1119,19 @@
     "id": "dc-1076187762157441074",
     "discordId": "1076187762157441074",
     "username": "llanossz",
-    "role": "MIEMBRO",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-17",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1076187762157441074/9285527835d024251c1f68756862d129.png"
+  },
+  {
+    "id": "dc-1078826175696220292",
+    "discordId": "1078826175696220292",
+    "username": "Farmer | CHilampa",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-28",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1078826175696220292/87fccbdd19a5e82fd9937e1da3f4d1ee.png"
   },
   {
     "id": "dc-1080280920906543114",
@@ -999,6 +1143,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/1080280920906543114/4603eb9b46c4928e3813b655ace1bdeb.png"
   },
   {
+    "id": "dc-1095269582765305866",
+    "discordId": "1095269582765305866",
+    "username": "nuncaa.",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-28",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1095269582765305866/0226cfb25135ae1e15c97a0d8db0675a.png"
+  },
+  {
     "id": "dc-1101853240624173136",
     "discordId": "1101853240624173136",
     "username": "Farmer | 么 Thecompadani 亗",
@@ -1006,6 +1159,15 @@
     "joinDate": "2026-03-31",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1101853240624173136/2aa7d9d63352a8479440bec47bede392.png"
+  },
+  {
+    "id": "dc-1101929257422295070",
+    "discordId": "1101929257422295070",
+    "username": "Builder | luisiyoelpillo4",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-24",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1101929257422295070/03fb706c4a65677881f68263cedd0899.png"
   },
   {
     "id": "dc-1105506928886546554",
@@ -1071,6 +1233,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/1137226415905976320/c82b3fa769ed6e6ffdea579381ed5f5c.png"
   },
   {
+    "id": "dc-1137235506837590068",
+    "discordId": "1137235506837590068",
+    "username": "PVP | Abbys",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-01",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1137235506837590068/9011ef46a168957c901d5293c37a93cb.png"
+  },
+  {
     "id": "dc-1143476010059305051",
     "discordId": "1143476010059305051",
     "username": "PHANTOM BOOST",
@@ -1082,11 +1253,11 @@
   {
     "id": "dc-1158863144215654492",
     "discordId": "1158863144215654492",
-    "username": "PVP | StyleoffOnly_",
+    "username": "PVP | StyleOfAbyssal",
     "role": "MIEMBRO",
     "joinDate": "2026-04-01",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1158863144215654492/278b9cd3d4f1e5e0ea0c01e358eadc40.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1158863144215654492/46b4434b96103431ac75dd0619481c0c.png"
   },
   {
     "id": "dc-1163474383893958717",
@@ -1118,20 +1289,11 @@
   {
     "id": "dc-1169468019802652772",
     "discordId": "1169468019802652772",
-    "username": "Técnico | Dereckk",
+    "username": "Dereckk",
     "role": "MIEMBRO",
     "joinDate": "2026-04-01",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1169468019802652772/527db9ddcc5ae317fcd9b6c2e3bbebc4.png"
-  },
-  {
-    "id": "dc-1188602041531109418",
-    "discordId": "1188602041531109418",
-    "username": "Ally | 6g9v",
-    "role": "UNMEMBER",
-    "joinDate": "2026-04-03",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1188602041531109418/6c56bbffbf7d7891749692aa04ec3d71.png"
   },
   {
     "id": "dc-1190733208438968330",
@@ -1152,15 +1314,6 @@
     "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Farmer%20%7C%20E%D0%98G3LS%E2%8E%AFM%D0%AF"
   },
   {
-    "id": "dc-1196071741022277734",
-    "discordId": "1196071741022277734",
-    "username": "Herrero | goku54699",
-    "role": "RECLUTADOR",
-    "joinDate": "2026-03-02",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1196071741022277734/95792c3bc5f845f43e32ecfe1d916d0b.png"
-  },
-  {
     "id": "dc-1197923567292129362",
     "discordId": "1197923567292129362",
     "username": "Colider | kikex1703",
@@ -1176,7 +1329,7 @@
     "role": "UNMEMBER",
     "joinDate": "2026-03-21",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1200473779390906438/69e4776250f4c7b600f95621f050b542.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1200473779390906438/e55f3a7221e6c3e619a84c6dd0c2e122.png"
   },
   {
     "id": "dc-1204151707378913330",
@@ -1185,7 +1338,16 @@
     "role": "MIEMBRO",
     "joinDate": "2026-03-29",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1204151707378913330/16a695b92d689abc2daeed3c1398d4bc.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1204151707378913330/dcba600e2fbf53d04a259d10223af005.png"
+  },
+  {
+    "id": "dc-1205280473090367549",
+    "discordId": "1205280473090367549",
+    "username": "لشئةثغ",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-19",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1205280473090367549/9955d13052c03e58833c72ca00ae11ce.png"
   },
   {
     "id": "dc-1207715808319377492",
@@ -1217,38 +1379,29 @@
   {
     "id": "dc-1218929233540153444",
     "discordId": "1218929233540153444",
-    "username": "Mendoza",
-    "role": "UNMEMBER",
+    "username": "PVP | Mendoza",
+    "role": "MIEMBRO",
     "joinDate": "2026-04-10",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1218929233540153444/1aaf1d377084dfa9b6bb9f9016a5c8b9.png"
   },
   {
-    "id": "dc-1218952305274130505",
-    "discordId": "1218952305274130505",
-    "username": "Ally | Sannvl",
-    "role": "UNMEMBER",
-    "joinDate": "2026-03-22",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1218952305274130505/3db2bbf816a0d7668b1d30f83804b486.png"
-  },
-  {
     "id": "dc-1219842123705221131",
     "discordId": "1219842123705221131",
-    "username": "Builder | AndyXker",
-    "role": "MIEMBRO",
+    "username": "Cap-Multitask | AndyXker",
+    "role": "CAPITAN",
     "joinDate": "2025-11-06",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1219842123705221131/ecf64b66062271f6718bc37c83f300d4.png"
   },
   {
-    "id": "dc-1220068739685289986",
-    "discordId": "1220068739685289986",
-    "username": "Farmer | jaredbenja344",
+    "id": "dc-1228458767750922261",
+    "discordId": "1228458767750922261",
+    "username": "Builder | Noah",
     "role": "MIEMBRO",
-    "joinDate": "2026-02-23",
+    "joinDate": "2026-04-17",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1220068739685289986/77d89d2d718401c2e84454b2e4d40279.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1228458767750922261/6ee670e5925f7f69fa362a5ce674040c.png"
   },
   {
     "id": "dc-1240732050697486407",
@@ -1266,34 +1419,34 @@
     "role": "MIEMBRO",
     "joinDate": "2026-03-02",
     "contributions": 0,
-    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Farmer%20%7C%20Ivanelp1577"
+    "avatar": "https://cdn.discordapp.com/avatars/1256629347050192896/9e707170be289395744ebed4a2cfc4d6.png"
+  },
+  {
+    "id": "dc-1261442381488717864",
+    "discordId": "1261442381488717864",
+    "username": "Recluta | nunca_38982",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-28",
+    "contributions": 0,
+    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Recluta%20%7C%20nunca_38982"
   },
   {
     "id": "dc-1270942195922505843",
     "discordId": "1270942195922505843",
-    "username": "ItzRealMe",
+    "username": "愛VcGhost愛",
     "role": "UNMEMBER",
     "joinDate": "2026-02-17",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1270942195922505843/9456f95e048c83132ddc0a5d215f94a4.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1270942195922505843/9f692b1ee016f1f79dbe18f6f33323af.png"
   },
   {
     "id": "dc-1272343935758499952",
     "discordId": "1272343935758499952",
-    "username": "PVP | Kendo Kaponi",
-    "role": "MIEMBRO",
+    "username": "Kendo Kaponi",
+    "role": "UNMEMBER",
     "joinDate": "2026-03-24",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1272343935758499952/f24c93747aff9484ffc33f07ce13070e.png"
-  },
-  {
-    "id": "dc-1274518133239185452",
-    "discordId": "1274518133239185452",
-    "username": "X1nnOx",
-    "role": "UNMEMBER",
-    "joinDate": "2026-04-11",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1274518133239185452/c8b25c4f18e119d380d6abd8fcd11ac9.png"
   },
   {
     "id": "dc-1276198973652209770",
@@ -1307,7 +1460,7 @@
   {
     "id": "dc-1279657811487363187",
     "discordId": "1279657811487363187",
-    "username": "PVP | Kendall",
+    "username": "PVP | InfiniteKendall",
     "role": "UNMEMBER",
     "joinDate": "2026-03-17",
     "contributions": 0,
@@ -1325,7 +1478,7 @@
   {
     "id": "dc-1284579718183653419",
     "discordId": "1284579718183653419",
-    "username": "Cap-Técnico|RintintinNovioDeKent",
+    "username": "Cap-Técnico|rintintinNovioDeKent",
     "role": "CAPITAN",
     "joinDate": "2026-03-02",
     "contributions": 0,
@@ -1338,7 +1491,7 @@
     "role": "UNMEMBER",
     "joinDate": "2026-03-07",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1287272623687995423/12a07efc96def5c40c5ee3d478e4c424.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1287272623687995423/10299bd4aab034c21fee472425e2e5bc.png"
   },
   {
     "id": "dc-1294380457449750588",
@@ -1352,20 +1505,38 @@
   {
     "id": "dc-1295474459028750378",
     "discordId": "1295474459028750378",
-    "username": "PVP |  hiancyss",
-    "role": "MIEMBRO",
+    "username": "22perc",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-25",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1295474459028750378/1227b7effcedb03055ddb9f9264e0f9a.png"
   },
   {
+    "id": "dc-1297400784991944709",
+    "discordId": "1297400784991944709",
+    "username": "PVP | _JRT",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-28",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1297400784991944709/31f1ae1beb1b39e2e58d507c66386390.png"
+  },
+  {
     "id": "dc-1312210122755539107",
     "discordId": "1312210122755539107",
-    "username": "PVP | yamatopexd",
+    "username": "Maiknowww",
     "role": "MIEMBRO",
     "joinDate": "2026-02-03",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1312210122755539107/7299068870e45a0fb251e9698a5613f4.png"
+  },
+  {
+    "id": "dc-1320983873387106346",
+    "discordId": "1320983873387106346",
+    "username": "Ianforgotten27",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-30",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1320983873387106346/f524c0b518b9272444c8b13564e94886.png"
   },
   {
     "id": "dc-1322181822276177931",
@@ -1379,16 +1550,16 @@
   {
     "id": "dc-1324655352108552305",
     "discordId": "1324655352108552305",
-    "username": "Pendejo | PP",
-    "role": "MIEMBRO",
-    "joinDate": "2026-03-22",
+    "username": "Leader-PVP | PP",
+    "role": "CAPITAN",
+    "joinDate": "2026-04-18",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1324655352108552305/ac4d094c4e4d852c617cd66af177b981.png"
   },
   {
     "id": "dc-1331110932226642023",
     "discordId": "1331110932226642023",
-    "username": "PVP | Youngboy",
+    "username": "Builder | Youngboy",
     "role": "MIEMBRO",
     "joinDate": "2026-02-03",
     "contributions": 0,
@@ -1397,20 +1568,11 @@
   {
     "id": "dc-1334396573668343852",
     "discordId": "1334396573668343852",
-    "username": "Colider | Adrian",
+    "username": "Colider | Adriamh",
     "role": "COLIDER",
     "joinDate": "2025-11-11",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1334396573668343852/a_e101d92a765e835baf16de133c1e6f3c.png"
-  },
-  {
-    "id": "dc-1343437491176341547",
-    "discordId": "1343437491176341547",
-    "username": "Caballero",
-    "role": "MIEMBRO",
-    "joinDate": "2026-02-17",
-    "contributions": 0,
-    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Caballero"
+    "avatar": "https://cdn.discordapp.com/avatars/1334396573668343852/a_57ecded6d770a05a9619f18c32b4d3bd.png"
   },
   {
     "id": "dc-1347297900761321534",
@@ -1424,8 +1586,8 @@
   {
     "id": "dc-1350065104577888387",
     "discordId": "1350065104577888387",
-    "username": "PVP | iiLuzbel",
-    "role": "MIEMBRO",
+    "username": "iiLuzbel",
+    "role": "UNMEMBER",
     "joinDate": "2026-03-24",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1350065104577888387/3192fa857e483083adde760e6d5d3fa3.png"
@@ -1433,8 +1595,8 @@
   {
     "id": "dc-1352867600018702502",
     "discordId": "1352867600018702502",
-    "username": "PVP | ✿itz_valeria",
-    "role": "MIEMBRO",
+    "username": "✿Valeria",
+    "role": "UNMEMBER",
     "joinDate": "2026-03-25",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1352867600018702502/c3e2fcf1586e4e725074328445ca4234.png"
@@ -1455,7 +1617,7 @@
     "role": "COLIDER",
     "joinDate": "2026-03-23",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1374438008949833873/1f104a7fcb1ef4f8ecd3a4bc3107076f.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1374438008949833873/eef55efa65c5e4d3c9018f9655712b09.png"
   },
   {
     "id": "dc-1380653638325899387",
@@ -1476,9 +1638,18 @@
     "avatar": "https://cdn.discordapp.com/avatars/1386170541450199080/8590f67a81573dff234be8168904f025.png"
   },
   {
+    "id": "dc-1388372960221331479",
+    "discordId": "1388372960221331479",
+    "username": "Farmer | Khaite",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-26",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1388372960221331479/21b7afe2f54d82422ed3b0bb269b2675.png"
+  },
+  {
     "id": "dc-1388979341769314345",
     "discordId": "1388979341769314345",
-    "username": "PVP | Zaza19lol",
+    "username": "PVP | Zaza",
     "role": "MIEMBRO",
     "joinDate": "2026-03-16",
     "contributions": 0,
@@ -1494,24 +1665,6 @@
     "avatar": "https://cdn.discordapp.com/avatars/1391465205866827969/77f1897be258e3a6a08cd87281afda96.png"
   },
   {
-    "id": "dc-1396288500504199242",
-    "discordId": "1396288500504199242",
-    "username": "Recluta | juan2012ab",
-    "role": "MIEMBRO",
-    "joinDate": "2026-04-12",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1396288500504199242/ef6a485a2c1d6aa470a863267bc334f4.png"
-  },
-  {
-    "id": "dc-1399150825502281798",
-    "discordId": "1399150825502281798",
-    "username": "Chendo",
-    "role": "UNMEMBER",
-    "joinDate": "2026-04-13",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1399150825502281798/ebd4e24936e4ee07786611c713c93e28.png"
-  },
-  {
     "id": "dc-1400661041356079134",
     "discordId": "1400661041356079134",
     "username": "PVP | benja",
@@ -1521,13 +1674,22 @@
     "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=PVP%20%7C%20benja"
   },
   {
+    "id": "dc-1411776519273189540",
+    "discordId": "1411776519273189540",
+    "username": "Recluta | atudo06",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-03",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1411776519273189540/6c5996770c985bcd6e5b68131ff2ba04.png"
+  },
+  {
     "id": "dc-1412647666130882671",
     "discordId": "1412647666130882671",
-    "username": "jonaent39",
+    "username": "jonaent",
     "role": "UNMEMBER",
     "joinDate": "2026-04-12",
     "contributions": 0,
-    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=jonaent39"
+    "avatar": "https://cdn.discordapp.com/avatars/1412647666130882671/027a0d9f00956746f649659184933727.png"
   },
   {
     "id": "dc-1413960485501407232",
@@ -1548,6 +1710,15 @@
     "avatar": "https://cdn.discordapp.com/avatars/1414672685069504526/f829fc3fb9665fd05d497d7b0b94f599.png"
   },
   {
+    "id": "dc-1416216504000839820",
+    "discordId": "1416216504000839820",
+    "username": "PVP | Sofi345",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-30",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1416216504000839820/6ac624d51c636ae3cc4bc590c36577c0.png"
+  },
+  {
     "id": "dc-1416909302253228043",
     "discordId": "1416909302253228043",
     "username": "bookreader_",
@@ -1557,9 +1728,18 @@
     "avatar": "https://cdn.discordapp.com/avatars/1416909302253228043/16aa559dd3945303aaed82df750b7895.png"
   },
   {
+    "id": "dc-1425872437681324076",
+    "discordId": "1425872437681324076",
+    "username": "Ally | MagaUy",
+    "role": "UNMEMBER",
+    "joinDate": "2026-05-02",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1425872437681324076/a8654a366e67578cc520cba1dc132c67.png"
+  },
+  {
     "id": "dc-1438943170628161536",
     "discordId": "1438943170628161536",
-    "username": "ENFIMITY17",
+    "username": "F5  Mart!nez",
     "role": "UNMEMBER",
     "joinDate": "2026-02-16",
     "contributions": 0,
@@ -1568,11 +1748,11 @@
   {
     "id": "dc-1439648889249464483",
     "discordId": "1439648889249464483",
-    "username": "DaiRufi",
-    "role": "UNMEMBER",
+    "username": "PVP | DaiRufi",
+    "role": "MIEMBRO",
     "joinDate": "2026-03-26",
     "contributions": 0,
-    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=DaiRufi"
+    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=PVP%20%7C%20DaiRufi"
   },
   {
     "id": "dc-1440551442187292807",
@@ -1587,7 +1767,7 @@
     "id": "dc-1442611510261321848",
     "discordId": "1442611510261321848",
     "username": "andrea7u7",
-    "role": "MIEMBRO",
+    "role": "UNMEMBER",
     "joinDate": "2026-02-05",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1442611510261321848/b101065c4dfde4ca5751cddc1e0267c4.png"
@@ -1599,7 +1779,16 @@
     "role": "MIEMBRO",
     "joinDate": "2026-04-01",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1443833005461475360/f66f6984e377acf8c239bd37cba99713.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1443833005461475360/528410f718940448dd172fd985014977.png"
+  },
+  {
+    "id": "dc-1444189907781423198",
+    "discordId": "1444189907781423198",
+    "username": "Recluta | angelo.fex502",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-02",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1444189907781423198/9ff29e956ec40ffe0ba6532ad28670d8.png"
   },
   {
     "id": "dc-1444906882476015738",
@@ -1617,25 +1806,16 @@
     "role": "MIEMBRO",
     "joinDate": "2026-02-22",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1445389501466808350/1f58b8f3d4131c50c05a1c669a59afa4.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1445389501466808350/518bd59082a87873b51d5a3bc2b29902.png"
   },
   {
     "id": "dc-1449213449782693968",
     "discordId": "1449213449782693968",
-    "username": "Farmer | Elrichmc2010",
-    "role": "MIEMBRO",
+    "username": "Cap-Farmer | Elrichmc2010",
+    "role": "CAPITAN",
     "joinDate": "2026-03-23",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1449213449782693968/9d516100824ce7ac7f20b377f63abe0d.png"
-  },
-  {
-    "id": "dc-1451668838780371077",
-    "discordId": "1451668838780371077",
-    "username": "Jose_02",
-    "role": "UNMEMBER",
-    "joinDate": "2026-04-13",
-    "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1451668838780371077/83dd808486f1fa7e5cc133aad90bd748.png"
   },
   {
     "id": "dc-1455029279766352024",
@@ -1694,11 +1874,20 @@
   {
     "id": "dc-1471639016607842446",
     "discordId": "1471639016607842446",
-    "username": "PVP | zBlazerHot",
-    "role": "MIEMBRO",
+    "username": "zBlazerHot",
+    "role": "UNMEMBER",
     "joinDate": "2026-03-19",
     "contributions": 0,
-    "avatar": "https://cdn.discordapp.com/avatars/1471639016607842446/df20bcfb95e487111edc1e3d57049d8e.png"
+    "avatar": "https://cdn.discordapp.com/avatars/1471639016607842446/b472cf4c5785cb73794f832c01300a7f.png"
+  },
+  {
+    "id": "dc-1473452122128515128",
+    "discordId": "1473452122128515128",
+    "username": "Builder | Owen:)",
+    "role": "MIEMBRO",
+    "joinDate": "2026-04-30",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1473452122128515128/97fbce9aa72dec7cba2bac24edac4864.png"
   },
   {
     "id": "dc-1473922799885226126",
@@ -1717,5 +1906,32 @@
     "joinDate": "2026-03-04",
     "contributions": 0,
     "avatar": "https://cdn.discordapp.com/avatars/1474038482107371702/6c5996770c985bcd6e5b68131ff2ba04.png"
+  },
+  {
+    "id": "dc-1475053842419679243",
+    "discordId": "1475053842419679243",
+    "username": "PVP | Gutsito",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-15",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1475053842419679243/286668c2d4e5a48edd108e07327158c4.png"
+  },
+  {
+    "id": "dc-1492686117185786168",
+    "discordId": "1492686117185786168",
+    "username": "Recluta | elrompechepas_33862",
+    "role": "MIEMBRO",
+    "joinDate": "2026-05-01",
+    "contributions": 0,
+    "avatar": "https://api.dicebear.com/9.x/pixel-art/svg?seed=Recluta%20%7C%20elrompechepas_33862"
+  },
+  {
+    "id": "dc-1494007540730826965",
+    "discordId": "1494007540730826965",
+    "username": "fedeeeee12930482",
+    "role": "UNMEMBER",
+    "joinDate": "2026-04-28",
+    "contributions": 0,
+    "avatar": "https://cdn.discordapp.com/avatars/1494007540730826965/3e10f449e937bdf12b65e7f807ca2f03.png"
   }
 ]
